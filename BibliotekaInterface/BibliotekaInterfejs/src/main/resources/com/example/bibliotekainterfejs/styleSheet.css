@@ -1,0 +1,11 @@
+.bodybg{
+    -fx-background-image: url('com/example/bibliotekainterfejs/best-library-wordpress-themes.jpg');
+    -fx-background-size: 100% 100%;
+}
+/*.text-area .content{
+    -fx-font-family: Consolas;
+    -fx-highlight-fill: #00ff00;
+    -fx-highlight-text-fill: #000000;
+    -fx-text-fill: #00ff00;
+    -fx-background-color: black;
+}*/

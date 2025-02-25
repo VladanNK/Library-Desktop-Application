@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="677.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bibliotekainterfejs.MainController">
+   <children>
+      <ImageView fitHeight="855.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@best-library-wordpress-themes.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="561.0" layoutY="699.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="65.0" prefWidth="202.0" style="-fx-background-color: orange;" text="Back" textFill="#0d4de4">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Button>
+      <Pane prefHeight="86.0" prefWidth="92.0" style="-fx-background-color: aqua;">
+         <children>
+            <ImageView fx:id="MenuActivate2" fitHeight="65.0" fitWidth="73.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@side-menu-icon-symbol-design-illustration-vector.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MenuDeactivate2" fitHeight="65.0" fitWidth="65.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@side-menu-icon-symbol-design-illustration-vector.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane fx:id="slider2" layoutX="92.0" prefHeight="86.0" prefWidth="1108.0" style="-fx-background-color: orange;">
+         <children>
+            <CheckBox fx:id="buttonAutor" layoutX="8.0" layoutY="32.0" mnemonicParsing="false" text="Autor">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buttonBiblioteka" layoutX="109.0" layoutY="32.0" mnemonicParsing="false" text="Biblioteka">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buttonDrzava" layoutX="245.0" layoutY="32.0" mnemonicParsing="false" text="Drzava">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buttonGrad" layoutX="361.0" layoutY="32.0" mnemonicParsing="false" text="Grad">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buttonIK" layoutX="469.0" layoutY="32.0" mnemonicParsing="false" text="Izdavacka Kuca">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buttonKategorija" layoutX="656.0" layoutY="32.0" mnemonicParsing="false" text="Kategorija">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buttonKnjiga" layoutX="813.0" layoutY="32.0" mnemonicParsing="false" text="Knjiga">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="buttonStavkaKnjiga" layoutX="928.0" layoutY="32.0" mnemonicParsing="false" text="Stavka Knjiga">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </CheckBox>
+         </children>
+      </Pane>
+      <TableView fx:id="tableAutor2" layoutX="14.0" layoutY="98.0" prefHeight="197.0" prefWidth="530.0" />
+      <TableView fx:id="tableBiblioteka2" layoutX="14.0" layoutY="296.0" prefHeight="164.0" prefWidth="530.0" />
+      <TableView fx:id="tableGrad2" layoutX="14.0" layoutY="461.0" prefHeight="154.0" prefWidth="530.0" />
+      <TableView fx:id="tableKnjiga2" layoutX="14.0" layoutY="619.0" prefHeight="176.0" prefWidth="530.0" />
+      <TableView fx:id="tableDrzava2" layoutX="778.0" layoutY="98.0" prefHeight="182.0" prefWidth="420.0" />
+      <TableView fx:id="tableKategorija2" layoutX="778.0" layoutY="287.0" prefHeight="148.0" prefWidth="420.0" />
+      <TableView fx:id="tableIK2" layoutX="778.0" layoutY="442.0" prefHeight="164.0" prefWidth="420.0" />
+      <TableView fx:id="tableStavkaKnjiga2" layoutX="778.0" layoutY="612.0" prefHeight="182.0" prefWidth="420.0" />
+   </children>
+</AnchorPane>

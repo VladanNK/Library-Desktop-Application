@@ -1,0 +1,9 @@
+25/02/25 03:09 Kreirana je nova Biblioteka pod ID-jem: 911
+25/02/25 03:13 Kreirana je nova Biblioteka pod ID-jem: 912
+25/02/25 03:13 Kreirana je nova Drzava pod ID-jem: 411
+25/02/25 03:13 Kreiran je novi Grad pod ID-jem: 604
+25/02/25 03:39 Obrisan je Autor pod ID-jem: 973
+25/02/25 03:39 Obrisana je Biblioteka pod ID-jem: 912
+25/02/25 03:41 Azuriran je Autor pod ID-jem: 974
+25/02/25 03:41 Azurirana je Drzava pod ID-jem: 411
+25/02/25 03:41 Azuriran je Grad pod ID-jem: 604

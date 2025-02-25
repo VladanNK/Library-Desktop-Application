@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.CheckComboBox?>
+
+<AnchorPane prefHeight="677.0" prefWidth="922.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bibliotekainterfejs.MainController">
+   <children>
+      <ImageView fitWidth="1222.0" layoutX="-21.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@best-library-wordpress-themes.jpg" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="86.0" prefWidth="92.0" style="-fx-background-color: aqua;">
+         <children>
+            <ImageView fx:id="MenuActivate2" fitHeight="65.0" fitWidth="73.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@side-menu-icon-symbol-design-illustration-vector.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="MenuDeactivate2" fitHeight="65.0" fitWidth="73.0" layoutX="9.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@side-menu-icon-symbol-design-illustration-vector.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Button layoutX="14.0" layoutY="698.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="80.0" prefWidth="222.0" style="-fx-background-color: orange;" text="Back" textFill="#0d4de4">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="submitCreate" layoutX="942.0" layoutY="698.0" mnemonicParsing="false" prefHeight="79.0" prefWidth="222.0" style="-fx-background-color: orange;" text="Submit" textFill="#1217e5">
+         <font>
+            <Font name="System Bold" size="38.0" />
+         </font>
+      </Button>
+      <Pane fx:id="slider2" layoutX="91.0" prefHeight="86.0" prefWidth="1110.0" style="-fx-background-color: orange;">
+         <children>
+            <RadioButton fx:id="optionAutor" layoutX="9.0" layoutY="29.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="96.0" text="Autor">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="optionBiblioteka" layoutX="119.0" layoutY="32.0" mnemonicParsing="false" text="Biblioteka" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionDrzava" layoutX="262.0" layoutY="32.0" mnemonicParsing="false" text="Drzava" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionGrad" layoutX="374.0" layoutY="29.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="81.0" text="Grad" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionIzdavackaKuca" layoutX="470.0" layoutY="32.0" mnemonicParsing="false" text="Izdavacka Kuca" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionKategorija" layoutX="662.0" layoutY="32.0" mnemonicParsing="false" text="Kategorija" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="optionKnjiga" layoutX="810.0" layoutY="32.0" mnemonicParsing="false" text="Knjiga" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="20.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="optionStavkaKnjiga" layoutX="930.0" layoutY="32.0" mnemonicParsing="false" text="Stavka Knjiga" toggleGroup="$toggleGroup">
+               <font>
+                  <Font size="20.0" />
+               </font></RadioButton>
+         </children>
+      </Pane>
+      <Pane fx:id="paneAutor" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="48.0" layoutY="14.0" prefHeight="44.0" prefWidth="166.0" text="Ime Autora" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosImenaAutora" layoutX="18.0" layoutY="60.0" prefHeight="28.0" prefWidth="225.0" />
+            <Label layoutX="308.0" layoutY="14.0" prefHeight="44.0" prefWidth="225.0" text="Prezime Autora" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosPrezimenaAutora" layoutX="308.0" layoutY="60.0" prefHeight="28.0" prefWidth="225.0" />
+            <Label layoutX="585.0" layoutY="16.0" prefHeight="44.0" prefWidth="225.0" text="Godine Autora" textAlignment="CENTER">
+               <font>
+                  <Font name="Calibri" size="35.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosGodinaAutora" layoutX="585.0" layoutY="58.0" prefHeight="28.0" prefWidth="225.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneBiblioteka" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="88.0" layoutY="33.0" prefHeight="36.0" prefWidth="145.0" text="Naziv Biblioteke" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosNazivaBiblioteke" layoutX="28.0" layoutY="79.0" prefHeight="30.0" prefWidth="249.0" />
+            <Label layoutX="346.0" layoutY="33.0" prefHeight="36.0" prefWidth="169.0" text="Adresa Biblioteke" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosAdreseBiblioteke" layoutX="286.0" layoutY="79.0" prefHeight="30.0" prefWidth="262.0" />
+            <ChoiceBox fx:id="izborGradova" layoutX="570.0" layoutY="81.0" prefHeight="28.0" prefWidth="293.0" />
+            <Label layoutX="674.0" layoutY="37.0" prefHeight="30.0" prefWidth="107.0" text="ID Gradova">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneDrzava" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="287.0" prefHeight="73.0" prefWidth="305.0" text="Naziv Drzave" textAlignment="CENTER">
+               <font>
+                  <Font size="50.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosDrzave" layoutX="177.0" layoutY="73.0" prefHeight="56.0" prefWidth="525.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneGrad" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="30.0" layoutY="23.0" prefHeight="53.0" prefWidth="233.0" text="Naziv Grada">
+               <font>
+                  <Font name="Calibri" size="45.0" />
+               </font>
+            </Label>
+            <Label layoutX="303.0" layoutY="26.0" prefHeight="53.0" prefWidth="293.0" text="Postanski broj">
+               <font>
+                  <Font name="Calibri" size="45.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosNazivaGrada" layoutX="13.0" layoutY="84.0" prefHeight="36.0" prefWidth="262.0" />
+            <TextField fx:id="unosPostanskogBroja" layoutX="297.0" layoutY="86.0" prefHeight="36.0" prefWidth="262.0" />
+            <ChoiceBox fx:id="izborDrzave" layoutX="586.0" layoutY="86.0" prefHeight="36.0" prefWidth="284.0" />
+            <Label layoutX="613.0" layoutY="22.0" prefHeight="53.0" prefWidth="211.0" text="ID Drzava">
+               <font>
+                  <Font size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneIK" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="38.0" layoutY="13.0" prefHeight="73.0" prefWidth="385.0" text="Naziv Izdavacke Kuce">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosIK" layoutX="37.0" layoutY="85.0" prefHeight="36.0" prefWidth="385.0" />
+            <ChoiceBox fx:id="izborGradovaZaIK" layoutX="472.0" layoutY="82.0" prefHeight="36.0" prefWidth="343.0" />
+            <Label layoutX="522.0" layoutY="25.0" prefHeight="58.0" prefWidth="293.0" text="Izaberi Grad:">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneKategorija" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="275.0" layoutY="14.0" text="Naziv Kategorije">
+               <font>
+                  <Font name="Calibri" size="50.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosKategorije" layoutX="227.0" layoutY="79.0" prefHeight="46.0" prefWidth="424.0" />
+         </children>
+      </Pane>
+      <Pane fx:id="paneKnjiga" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="7.0" layoutY="14.0" prefHeight="46.0" prefWidth="153.0" text="Naziv Knjige">
+               <font>
+                  <Font name="Calibri" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="unosNazivaKnjige" layoutX="8.0" layoutY="79.0" prefHeight="36.0" prefWidth="166.0" />
+            <Label layoutX="186.0" layoutY="12.0" prefHeight="53.0" prefWidth="166.0" text="Izaberi Kategoriju:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="izborKategorije" layoutX="176.0" layoutY="77.0" prefHeight="36.0" prefWidth="169.0" />
+            <TextField fx:id="unosGodineIzdavanja" layoutX="347.0" layoutY="75.0" prefHeight="36.0" prefWidth="169.0" />
+            <Label layoutX="359.0" layoutY="19.0" prefHeight="44.0" prefWidth="153.0" text="Godina Izdanja">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="524.0" layoutY="20.0" prefHeight="46.0" prefWidth="187.0" text="Izaberi Izdavacku Kucu">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="izborIK2" layoutX="525.0" layoutY="74.0" prefHeight="36.0" prefWidth="187.0" />
+            <CheckComboBox fx:id="izborAutora" layoutX="719.0" layoutY="70.0" prefHeight="36.0" prefWidth="153.0" />
+            <Label layoutX="714.0" layoutY="22.0" prefHeight="36.0" prefWidth="166.0" text="Izaberi Autora/e">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="paneStavkaKnjiga" layoutX="119.0" layoutY="120.0" prefHeight="137.0" prefWidth="878.0" style="-fx-background-color: orange;">
+         <children>
+            <Label layoutX="101.0" layoutY="20.0" prefHeight="53.0" prefWidth="249.0" text="Izaberi knjigu">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="512.0" layoutY="16.0" prefHeight="65.0" prefWidth="317.0" text="Izaberi biblioteku">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="odabirKnjige" layoutX="30.0" layoutY="82.0" prefHeight="36.0" prefWidth="355.0" />
+            <ChoiceBox fx:id="odabirBiblioteke" layoutX="475.0" layoutY="79.0" prefHeight="36.0" prefWidth="355.0" />
+         </children>
+      </Pane>
+      <StackPane fx:id="stackTabela" layoutX="119.0" layoutY="270.0" prefHeight="322.0" prefWidth="878.0" style="-fx-background-color: green;">
+         <children>
+            <TableView fx:id="tableAutor2" prefHeight="197.0" prefWidth="642.0" />
+            <TableView fx:id="tableBiblioteka2" prefHeight="164.0" prefWidth="530.0" />
+            <TableView fx:id="tableGrad2" prefHeight="154.0" prefWidth="530.0" />
+            <TableView fx:id="tableKnjiga2" prefHeight="174.0" prefWidth="530.0" />
+            <TableView fx:id="tableDrzava2" prefHeight="182.0" prefWidth="420.0" />
+            <TableView fx:id="tableKategorija2" prefHeight="148.0" prefWidth="420.0" />
+            <TableView fx:id="tableIK2" prefHeight="164.0" prefWidth="420.0" />
+            <TableView fx:id="tableStavkaKnjiga2" prefHeight="182.0" prefWidth="420.0" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
